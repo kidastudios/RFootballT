@@ -14,18 +14,16 @@
     var y = Math.floor(Math.random()*club.length);  
     
     //document.body.appendChild(items[x]);
-    document.getElementById("pos").value = "" + items[x];
+    //document.getElementById("pos").value = "" + items[x];
     console.log(items[x]);
     //document.body.appendChild(club[y]);
-    document.getElementById("club").value = "" + club[y];
+    //document.getElementById("club").value = "" + club[y];
     console.log(club[y]);
     
     alert("Position: " + items[x] + "\nClub: " + club[y]);
 
   }
   </script>
-  <button onclick="random_item()">MCBC</button>
-  <p id="pos">Position</p>
-  <p id="club">Club</p>
+  <button style="width: 100px; height: 30px;" onclick="random_item()">MCBC</button>
 </body>
 </html>
