@@ -9,12 +9,12 @@
 
     var club = ["Arsenal", "Aston Villa", "Brighton", "Burnley", "Chelsea", "Crystal Palace", "Everton", "Fulham", "Leeds United", "Leicester City", "Liverpool", "Manchester City", "Manchester Utd", "Newcastle Utd", "Sheffield Utd", "Southampton", "Spurs", "West Brom", "West Ham", "Wolves", "Athletic Club", "Atlético de Madrid", "CA Osasuna", "Cádiz CF", "D. Alavés", "Elche CF", "FC Barcelona", "Getafe CF", "Granada CF", "Levante UD", "R. Valladolid CF", "RC Celta", "Real Betis", "Real Madrid", "Real Sociedad", "SD Eibar", "SD Huesca", "Sevilla FC", "Valencia CF", "Villarreal CF", "Angers SCO", "AS Monaco", "ASSE", "Bordeaux", "Dijon FCO", "FC Lorient", "FC Metz", "FC Nantes", "LOSC", "Montpellier", "Nîmes Olympique", "OGC Nice", "OL", "OM", "Paris SG", "RC Lens", "Rennes", "Stade Brestois 29", "Stade de Reims", "Strasbourg", "1. FC Köln", "1. FSV Mainz 05", "Bielefeld", "Dortmund", "FC Augsburg", "FC Bayern", "FC Schalke 04", "Frankfurt", "Hertha Berlin", "Leverkusen", "M'gladbach", "RB Leipzig", "SC Freiburg", "TSG Hoffenheim", "Union Berlin", "VfB Stuttgart", "VfL Wolfsburg", "Werder Bremen", "Atalanta", "Benevento", "Bologna", "Cagliari", "Crotone**", "Fiorentina", "Genoa", "Hellas Verona", "Inter", "La Spezia**", "Lazio", "Milan", "Napoli", "Parma", "Piemonte Calcio**", "Roma FC**", "Sampdoria", "Sassuolo", "Torino", "Udinese"];
   
-    var x = items[Math.floor(Math.random()*items.length)];  
+    var x = Math.floor(Math.random()*items.length);  
     
-    var y = club[Math.floor(Math.random()*club.length)];  
+    var y = Math.floor(Math.random()*club.length);  
     
-    document.body.appendChild(random_item(x));
-    document.body.appendChild(random_item(y));
+    document.body.appendChild(items[x]);
+    document.body.appendChild(club[y]);
   }
   </script>
   <button onclick="random_item()">MCBC</button>
